@@ -18,8 +18,8 @@ public class TodoEntity {
     @Column(nullable = false)
     private String title;
 
-    //@Column(name = "todoOrder", nullable = false) // "todoOrder" 부분에서 오류발생, h2database가 연결되어있지 않아 발생하는 오류로 추측
-    @Column(nullable = false)
+    //@Column(nullable = false)
+    @Column(name = "todoOrder", nullable = false) // "todoOrder" 부분에서 오류발생, h2database가 연결되어있지 않아 발생하는 오류로 추측
     private Long order;
 
     @Column(nullable = false)
